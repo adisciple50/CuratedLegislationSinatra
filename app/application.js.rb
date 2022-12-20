@@ -14,7 +14,7 @@ Document.ready? do
   Element.find('.legislation_website').on :click do
     current_page_url = Element.find('.legislation_website').attr[:href]
     if current_page_url != current_url
-      Element.find('current_page').html = current_page_url
+      Element.find('.current_website').html = current_page_url
     end
   end
 end
