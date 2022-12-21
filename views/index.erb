@@ -1,1 +1,4 @@
 <H1>Welcome!</H1>
+<% require_relative '../legislation_search_controller' %>
+<% search = LegislationSearchController.new('The Vagrancy Act',year=1935) %>
+<%= search.year_search %>
