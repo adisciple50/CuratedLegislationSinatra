@@ -1,5 +1,5 @@
 require 'httparty'
-class LegislationArticleController
+class LegislationIdController
   include HTTParty
   base_uri 'www.legislation.gov.uk'
   def initialize(title=nil,type=nil,year=nil,number=nil)

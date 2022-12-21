@@ -24,11 +24,11 @@ class LegislationSearchController
       version:@version}})
   end
   def year_search
-    self.class.get "/search/#{@title}/#{@year}"
+    self.class.get "/#{@title}/#{@year}"
   end
   def this_year
     @title = 'all'
-    @year = Date.today.strftime('%Y')
+    @year = Date.today.strftime('%Y').to_s
     year_search
   end
 end
